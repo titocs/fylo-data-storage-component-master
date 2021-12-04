@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+:root {
+    --Pale-Blue: hsl(243, 100%, 93%);
+    --Grayish-Blue: hsl(229, 7%, 55%);
+    --Dark-Blue: hsl(228, 56%, 26%);
+    --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: 0px 350px;
+    width: 100%;
+    height: 78vh;
+}
+
+main {
+    position: relative;
+    display: flex;
+    margin: auto;
+    height: 12em;
+    width: 54em;
+    margin-top: 16em;
+    margin-bottom: 20px;
+}
+
+.triangle-down {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 50px solid rgb(255, 255, 255);
+    left: 777px;
+    top: 47px;
+}
+
+.bubble-content {
+    position: absolute;
+    background-color: white;
+    height: 70px;
+    width: 180px;
+    border-radius: 10px;
+    left: 637px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bubble-content > h1 {
+    float: left;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 39px;
+}
+
+#capt {
+    float: left;
+    color: var(--Grayish-Blue);
+    font-size: 12px;
+    font-style: normal;
+    padding-top: 31px;
+    font-weight: 700;
+    padding-left: 6px;
+    letter-spacing: 1px;
+}
+
+.brand-wrapper {
+    background-color: var(--Dark-Blue);
+    width: 22em;
+    border-radius: 9px 93px 9px 9px;
+    margin-right: 27px;
+}
+
+.content {
+    background-color: var(--Dark-Blue);
+    height: 9em;
+    width: 31em;
+    margin-top: 47px;
+    border-radius: 9px;
+}
+
+.content-wrapper {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.gambar-logo {
+    margin-bottom: 25px;
+}
+
+.ikon {
+    display: flex;
+}
+
+.ikon-wrapper {
+    background-color: var(--Very-Dark-Blue);
+    height: 45px;
+    width: 45px;
+    border-radius: 9px;
+}
+
+.folder-wrap {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#document {
+    padding-left: 13px;
+    padding-top: 9px;
+}
+
+#folder {
+    padding-left: 10px;
+    padding-top: 11px;
+}
+
+#upload {
+    padding-left: 10px;
+    padding-top: 13px;
+}
+
+.content > p {
+    margin-left: 3em;
+    margin-top: 40px;
+    color: rgb(207, 207, 207);
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+span {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.slider-info {
+    /* width: 31em; */
+    height: 20px;
+    margin-left: 45px;
+    margin-right: 45px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 2px solid var(--Very-Dark-Blue);
+    background-color: var(--Very-Dark-Blue);
+}
+
+.gradient-wrapper {
+    width: 284px;
+    height: 16px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,228,1) 0%, rgba(255,170,246,1) 0%, rgba(241,83,182,1) 53%, rgba(237,46,156,1) 100%);
+    border-radius: 10px;
+}
+
+.circle-image {
+    width: 13px;
+    float: right;
+    margin-right: 2px;
+}
+
+#circle {
+    fill: white;
+}
+
+.size {
+    display: flex;
+    margin-left: 45px;
+    margin-top: 7px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#right {
+    margin-left: 320px; 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 400px){
+    body {
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+    }
+
+    .bubble-content {
+        left: 97px;
+        top: 334px;
+    }
+
+    main {
+        flex-direction: column;
+        margin-top: 8em;
+        height: 33em;
+        width: 23em;
+    }
+
+    .brand-wrapper {
+        width: 21em;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 12em;
+    }
+
+    .content {
+        width: 21em;
+        height: 10em;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 17px;
+    }
+
+    .content > p {
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .slider-info {
+        width: 17em;
+        margin-left: 30px;
+        margin-right: 14px;
+    }
+
+    .gradient-wrapper {
+        width: 211px;
+    }
+
+    .size {
+        margin-left: 31px;
+    }
+
+    #right {
+        margin-left: 191px;
+    }
+
+    .triangle-down {
+        display: none;
+    }
+}
